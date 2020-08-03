@@ -1,0 +1,44 @@
+D:\C# Programs\School Activities\prelim_project\prelim_project\bin\Debug\prelim_project.exe.config
+D:\C# Programs\School Activities\prelim_project\prelim_project\bin\Debug\prelim_project.exe
+D:\C# Programs\School Activities\prelim_project\prelim_project\bin\Debug\prelim_project.pdb
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\AboutWindow.g.cs
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\CongratulationWindow.g.cs
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\HelpWindow.g.cs
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\MainWindow.g.cs
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\StartGameWindow.g.cs
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\App.g.cs
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project_MarkupCompile.cache
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project_MarkupCompile.lref
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\AboutWindow.baml
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\CongratulationWindow.baml
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\HelpWindow.baml
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\MainWindow.baml
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\StartGameWindow.baml
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project.g.resources
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project.Properties.Resources.resources
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project.csproj.GenerateResource.cache
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project.exe
+D:\C# Programs\School Activities\prelim_project\prelim_project\obj\Debug\prelim_project.pdb
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\bin\Debug\prelim_project.exe.config
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\bin\Debug\prelim_project.exe
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\bin\Debug\prelim_project.pdb
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\AboutWindow.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\CongratulationWindow.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\GameModeWindow.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\HelpWindow.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\MainWindow.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\StartGameWindow.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\App.g.cs
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project_MarkupCompile.cache
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project_MarkupCompile.lref
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\AboutWindow.baml
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\CongratulationWindow.baml
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\GameModeWindow.baml
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\HelpWindow.baml
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\MainWindow.baml
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\StartGameWindow.baml
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project.g.resources
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project.Properties.Resources.resources
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project.csproj.GenerateResource.cache
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project.exe
+D:\C# Programs\School Activities\prelim_project(Tic Tac Toe)\prelim_project\obj\Debug\prelim_project.pdb

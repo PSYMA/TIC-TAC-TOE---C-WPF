@@ -1,0 +1,303 @@
+﻿<Window x:Class="prelim_project.StartGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prelim_project"
+        mc:Ignorable="d"
+        Height="700" 
+        Closing="StartGameWindow_Closing"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Width="450">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/prelim_project;component/Images/galaxy.png" 
+                        Stretch="UniformToFill"
+                        RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <ProgressBar Grid.Column="1"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="0"
+                     Height="30"
+                     Value="50"
+                     Minimum="0"
+                     Maximum="100"
+                     x:Name="_player1ProgressBar"
+                      />
+        <TextBlock Grid.Column="1"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="0"
+                   Text="{Binding ElementName=_player1ProgressBar, Path=Value, StringFormat={}{0:0}%}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" FontWeight="Bold" />
+        
+        <ProgressBar Grid.Column="7"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="0"
+                     Height="30"
+                     Value="50"
+                     Minimum="0"
+                     Maximum="100"
+                     x:Name="_player2ProgressBar"/>
+
+        <TextBlock Grid.Column="7"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="0"
+                   Text="{Binding ElementName=_player2ProgressBar, Path=Value, StringFormat={}{0:0}%}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" FontWeight="Bold" />
+
+        <TextBox Grid.Row="1"
+                 Grid.Column="1"
+                 Grid.RowSpan="2"
+                 Height="40"
+                 Grid.ColumnSpan="3"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center" 
+                 FontWeight="Bold" 
+                 FontStyle="Italic" 
+                 FontSize="22" 
+                 MaxLength="10"
+                 x:Name="_player1NicknameTextBox"
+                 PreviewMouseDown="Player1NickNameTextBox_PreviewMouseDown"
+                 Foreground="#FF2117EE"/>
+
+        <Button Grid.Column="4"
+                Grid.Row="2"
+                x:Name="_player1Score1Button"
+                Width="7"
+                Background="#00000000"/>
+
+        <Button Grid.Column="4"
+                Grid.Row="3"
+                x:Name="_player1Score2Button"
+                Width="7"
+                Background="#00000000"/>
+
+        <Button Grid.Column="4"
+                Grid.Row="4"
+                x:Name="_player1Score3Button"
+                Width="7"
+                Background="#00000000"/>
+
+        <ComboBox Grid.Row="2"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="3" 
+                  Margin="0,30,0,10" 
+                  VerticalContentAlignment="Center"
+                  HorizontalContentAlignment="Center"
+                  x:Name="_player1ComboBox"
+                  Grid.RowSpan="2"
+                  FontWeight="Bold"
+                  FontStyle="Italic" 
+                  SelectionChanged="Player1Combox_SelectionChanged"
+                  FontSize="14">
+       
+        </ComboBox>
+
+        <Label Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Grid.Row="3"
+                Grid.RowSpan="3" 
+                x:Name="_player1PiecesLabel"
+                Margin="0,36,0,30"/>
+
+        <TextBox Grid.Row="1"
+                 Grid.Column="7"
+                 Grid.ColumnSpan="3"
+                 Grid.RowSpan="2"
+                 Height="40"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center" 
+                 FontWeight="Bold" 
+                 FontStyle="Italic" 
+                 FontSize="22" 
+                 MaxLength="10"
+                 x:Name="_player2NicknameTextBox"
+                 PreviewMouseDown="Player2NickNameTextBox_PreviewMouseDown"
+                 Foreground="Red"/>
+
+        <Button Grid.Column="6"
+                Grid.Row="2"
+                x:Name="_player2Score1Button"
+                Width="7"
+                Background="#00000000"/>
+
+        <Button Grid.Column="6"
+                Grid.Row="3"
+                x:Name="_player2Score2Button"
+                Width="7"
+                Background="#00000000"/>
+
+        <Button Grid.Column="6"
+                Grid.Row="4"
+                x:Name="_player2Score3Button"
+                Width="7"
+                Background="#00000000"/>
+
+        <ComboBox Grid.Row="2"
+                  Grid.Column="7"
+                  Grid.ColumnSpan="3" 
+                  x:Name="_player2ComboBox"
+                  VerticalContentAlignment="Center"
+                  HorizontalContentAlignment="Center"
+                  FontWeight="Bold"
+                  FontStyle="Italic" 
+                  FontSize="14"
+                  SelectionChanged="Player2ComboBox_SelectionChanged"
+                  Margin="0,30,0,10"
+                  Grid.RowSpan="2">
+        </ComboBox>
+
+        <Label  Grid.Column="7"
+                Grid.ColumnSpan="3"
+                Grid.Row="3"
+                Grid.RowSpan="3" 
+                x:Name="_player2PiecesLabel"
+                Margin="0,36,0,30"/>
+
+        <Button Grid.Column="3"
+                Grid.Row="5"
+                Grid.RowSpan="2"
+                Height="50"
+                Grid.ColumnSpan="5"
+                Content="Play Game"
+                FontWeight="Bold" 
+                FontStyle="Italic"
+                Click="PlayGameButton_Click"
+                x:Name="_playGameButton"
+                FontSize="22" 
+                Background="#7F0F0F0E"
+                Foreground="#FFFF0606"/>
+
+        <TextBox Grid.Row="7"
+                 Grid.Column="3"
+                 Height="35"
+                 x:Name="_messageTextBox"
+                 HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Center"
+                 Grid.ColumnSpan="5" 
+                 FontWeight="Bold"
+                 FontStyle="Italic"
+                 FontSize="16" IsReadOnly="True"/>
+
+        <Button Grid.Column="1"
+                Grid.Row="12"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index20Button" 
+                Click="Index20Button_Click"/>
+        <Button Grid.Column="4"
+                Grid.Row="12"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2" 
+                x:Name="_index21Button"
+                Click="Index21Button_Click"/>
+        <Button Grid.Column="7"
+                Grid.Row="12"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index22Button"
+                Click="Index22Button_Click"/>
+
+        <Button Grid.Column="1"
+                Grid.Row="10"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index10Button"
+                Click="Index10Button_Click"/>
+        <Button Grid.Column="4"
+                Grid.Row="10"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index11Button"
+                Click="Index11Button_Click"/>
+        <Button Grid.Column="7"
+                Grid.Row="10"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index12Button"
+                Click="Index12Button_Click"/>
+
+        <Button Grid.Column="1"
+                Grid.Row="8"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index00Button"
+                Click="Index00Button_Click"/>
+        <Button Grid.Column="4"
+                Grid.Row="8"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index01Button"
+                Click="Index01Button_Click"/>
+        <Button Grid.Column="7"
+                Grid.Row="8"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                x:Name="_index02Button"
+                Click="Index02Button_Click"/>
+
+        <Button Grid.Column="2"
+                Grid.Row="14"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                Height="50"
+                Content="New Game"
+                FontWeight="Bold" 
+                FontStyle="Italic" 
+                FontSize="16"
+                Background="#7F0F0F0E"
+                Foreground="#FFFF0606"
+                Click="NewGameButton_Click"/>
+
+        <Button Grid.Column="6"
+                Grid.Row="14"
+                Grid.ColumnSpan="3"
+                Grid.RowSpan="2"
+                Height="50"
+                Content="Back To Main" 
+                FontWeight="Bold" 
+                FontStyle="Italic" 
+                FontSize="16"
+                Background="#7F0F0F0E"
+                Foreground="#FFFF0606"
+                Click="BackToMainButton_Click"/>
+    </Grid>
+</Window>

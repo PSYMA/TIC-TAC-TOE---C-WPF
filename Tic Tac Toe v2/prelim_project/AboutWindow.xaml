@@ -1,0 +1,174 @@
+﻿<Window x:Class="prelim_project.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prelim_project"
+        mc:Ignorable="d"
+        Height="440" 
+        Width="380"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Closing="AboutWindow_Closing">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/prelim_project;component/Images/galaxy4.png" 
+                        Stretch="UniformToFill"
+                        RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="2"
+                Grid.ColumnSpan="5"
+                Grid.Row="0"
+                Height="150"
+                x:Name="_myPictureLabel"
+                Grid.RowSpan="4"/>
+
+        <Label Grid.Column="0"
+               Grid.Row="4"
+               Grid.ColumnSpan="3"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+               Content="Name:" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="20" 
+               Foreground="#FFDCFF00">
+         
+        </Label>
+
+        <Label Grid.Column="3"
+               Grid.Row="4"
+               Grid.ColumnSpan="7"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Left"
+               Content="Rickben Anthony Q. Gimeda" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="18" 
+               Foreground="#FFDCFF00">
+            
+        </Label>
+
+        <Label Grid.Column="0"
+               Grid.Row="5"
+               Grid.ColumnSpan="3"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+               Content="Course:" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="20" 
+               Foreground="#FFDCFF00">
+           
+        </Label>
+
+        <Label Grid.Column="3"
+               Grid.Row="5"
+               Grid.ColumnSpan="7"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Left"
+               Content="BS Computer Engineering" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="18" 
+               Foreground="#FFDCFF00">
+          
+        </Label>
+
+        <Label Grid.Column="0"
+               Grid.Row="6"
+               Grid.ColumnSpan="3"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+               Content="Motto:" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="20" 
+               Foreground="#FFDCFF00">
+            
+        </Label>
+
+        <Label Grid.Column="3"
+               Grid.Row="6"
+               Grid.ColumnSpan="7"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Left"
+               Content="Time is money" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="18" 
+               Foreground="#FFDCFF00">
+            
+        </Label>
+
+        <Label Grid.Column="0"
+               Grid.Row="7"
+               Grid.ColumnSpan="3"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Left"
+               Content="Dedication:" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="20" 
+               Foreground="#FFDCFF00">
+           
+        </Label>
+
+        <Label Grid.Column="3"
+               Grid.Row="7"
+               Grid.ColumnSpan="7"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Left"
+               Content="No Comment" 
+               FontWeight="Bold" 
+               FontStyle="Italic" 
+               FontSize="18" 
+               Foreground="#FFDCFF00"
+               Background="#00000000">
+          
+        </Label>
+        <Button Grid.Column="2"
+                Grid.ColumnSpan="5"
+                Grid.Row="8"
+                Grid.RowSpan="2"
+                Content="Back to Main" 
+                FontWeight="Bold" 
+                FontStyle="Italic" 
+                Height="50"
+                Width="150"
+                Foreground="#FFDCFF00"
+                VerticalAlignment="Center"
+                MouseEnter="BackToMainButton_MouseEnter"
+                MouseLeave="BackToMainButton_MouseLeave"
+                Click="BackToMainButton_Click"
+                FontSize="20"
+                Background="#00000000">
+        </Button>
+    </Grid>
+</Window>
